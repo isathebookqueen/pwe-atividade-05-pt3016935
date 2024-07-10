@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Contato</title>
+  <title>Eventos</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
@@ -12,7 +12,93 @@
   <object href="menu.html" width="100%" height="65px" data="menu.html"></object>
 </nav>
 <body>
-  <h1>Contato</h1>
+  <div>
+    <img src=https://raw.githubusercontent.com/pwe-redes/pwe_imagens/master/Logo.jpg alt=Logo IFSP height="150">
+    <h1 id="titulo">Inscreva-se</h1>
+    <br>
+  </div>
+
+  <form>
+
+    <fieldset class="caixa">
+      <div class="campo">
+        <label for="evento">Evento</label>
+        <select id="evento">
+          <option selected disabled value="">--Selecione--</option>
+          <option>Voe sem asas</option>
+          <option>Festa Junina</option>
+          <option>Semana de tecnologia</option>
+          <br>
+          <br>
+        </select>
+      </div> 
+    </fieldset>
+    
+    <fieldset class="caixa">
+      <legend>Informações de acesso</legend>
+      <div class="campo">
+        <label for="user">Usuário</label>
+        <input type="text" name="user" id="user" required>
+      </div>
+
+      <div class="campo">
+        <label for="passwd">Senha</label>
+        <input type="password" name="passwd" id="passwd" required>
+      </div>
+
+      <div class="campo">
+        <label for="passwd2">Confirme a senha</label>
+        <input type="password" name="passwd2" id="passwd2" required>
+      </div>
+    </fieldset>
+
+    <br>
+
+    <fieldset class="caixa">
+      <legend>Informações pessoais</legend>
+      <div class="campo">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+      </div>
+
+    <div class="campo">
+      <label>De qual lado da aplicação você desenvolve?</label>
+      <label>
+        <input type="radio" id="webdev" value="frontend">Front-end
+      </label>
+      <label>
+        <input type="radio" id="webdev" value="backend">Back-end
+      </label>
+      <label>
+        <input type="radio" id="webdev" value="fullstack">Fullstack
+      </label>
+    </div>
+
+    <fieldset class="caixa">
+      <div class="campo">
+        <label>Selecione as tecnologias que você utiliza:</label>
+        <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+        <label for="tecnologia1">HTML</label>
+        <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+        <label for="tecnologia2">CSS</label>
+        <input type="checkbox" id="tecnologia3" name="tecnologia3" value="JavaScript">
+        <label for="tecnologia3">JavaScript</label>
+        <input type="checkbox" id="tecnologia4" name="tecnologia4" value="Python">
+        <label for="tecnologia4">Python</label>
+      </div>
+    </fieldset>
+    <br>
+
+    <div class="campo">
+      <br>
+      <label>Conte um pouco da sua experiência:</label>
+      <textarea row="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+    </div>
+
+    <div class=botao>
+      <button type=submit>Concluído</button>
+    </div>
+  </form>
   <script src="script.js"></script>
 </body>
 
