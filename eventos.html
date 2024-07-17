@@ -75,47 +75,30 @@
         <legend>Sexo</legend>
         <div class="campo">
           <label for="sexo">Masculino</label>
-          <input type="radio" name="sexo" id="sexo" value="masc">
+          <input type="radio" name="sexo" id="sexo" value="masc" required>
           <label for="sexo">Feminino</label>
-          <input type="radio" name=sexo id="sexo" value="fem">
+          <input type="radio" name=sexo id="sexo" value="fem" required>
         </div>
 
       </fieldset>
 
-    <div class="campo">
-      <label>De qual lado da aplicação você trabalha?</label>
-      <label>
-        <input type="radio" id="webdev" value="frontend">Front-end
-      </label>
-      <label>
-        <input type="radio" id="webdev" value="backend">Back-end
-      </label>
-      <label>
-        <input type="radio" id="webdev" value="fullstack">Fullstack
-      </label>
-    </div>
-
-    <fieldset class="caixa">
       <div class="campo">
-        <label>Selecione as tecnologias que você utiliza:</label>
-        <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
-        <label for="tecnologia1">HTML</label>
-        <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
-        <label for="tecnologia2">CSS</label>
-        <input type="checkbox" id="tecnologia3" name="tecnologia3" value="JavaScript">
-        <label for="tecnologia3">JavaScript</label>
-        <input type="checkbox" id="tecnologia4" name="tecnologia4" value="Python">
-        <label for="tecnologia4">Python</label>
+        <br>
+        <label>Data de nascimento</label>
+        <input type="date" id="data" name="data" required>
       </div>
-    </fieldset>
-    <br>
 
-    <div class="campo">
-      <br>
-      <label>Conte um pouco da sua experiência:</label>
-      <textarea row="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
-    </div>
+      <div class="campo">
+        <br>
+        <label>Cor favorita</label>
+        <input type="color" id="cor" name="cor" required>
+      </div>
 
+      <div class="campo">
+        <label>Pefil no GitHub</label>
+        <input type="text" name="perfil" id="perfil" required>
+      </div>
+      
     <div class=botao>
       <button type=submit>Concluído</button>
     </div>
